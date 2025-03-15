@@ -1,3 +1,12 @@
+# This project 
+This project explores how to add a moving 3D animation to your website as you scroll. I used Sketchfab, three.js and React.
+This is a learning project based on Lun Dev:
+https://www.youtube.com/watch?v=zNXQS2DfckU
+https://github.com/HoanghoDev
+
+The 3D animation was imported from Sketchfab and made by Alex @ahitch3
+https://sketchfab.com/3d-models/bird-animations-alex-081fa7f0cfd649b9b07babb4c619acc7
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
