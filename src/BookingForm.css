@@ -1,0 +1,37 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* ✅ Ensures label is above input */
+  margin-bottom: 15px; /* ✅ Adds spacing between fields */
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 5px; /* ✅ Creates space between label & input */
+}
+
+.form-group input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #d1ff48;
+  border: none;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #b4e23c;
+}

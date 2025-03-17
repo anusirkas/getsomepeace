@@ -3,6 +3,68 @@
 @import url('https://fonts.cdnfonts.com/css/bimbo');
 */
 
+/*Header Section*/
+header {
+    padding-block: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    background-color: rgba(27, 27, 27, 0.8);
+}
+
+header .content-fit {
+    display: flex;
+    justify-content: space-between; /* ✅ Keeps "Get Some Peace" on the left and links on the right */
+    align-items: center;
+    min-height: unset!important;
+    padding-block: unset!important;
+}
+
+/* ✅ Ensures "Get Some Peace" stays on the left */
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .logo .nav-link { 
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+header .logo .nav-link:hover {
+    color: #d1ff48;
+}
+
+/* ✅ Keeps navigation on the right */
+header .content-fit nav ul {
+    display: flex;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+header .content-fit nav ul li {
+    list-style: none;
+}
+
+header .content-fit nav ul li .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+header .content-fit nav ul li .nav-link:hover {
+    color: #d1ff48;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -101,13 +163,25 @@ header .content-fit nav ul{
 }
 .section .decorate {
     position: absolute;
+    transform: translateY(100px); /* Move down */
 }
 #intro .content-fit {
     display: flex;
-    gap: 30%;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-end;  /* Move to the right */
+    text-align: right;       /* Align text */
+    padding-right: 00%;      /* Adjust spacing from the right edge */
 }
+#intro .number {
+    font-size: 15em; /* Keep it consistent with Section 02 */
+}
+/* 01 Get Some Peace section*/
+#intro .des {
+    width: 70%;  /* Make paragraph width smaller */
+    max-width: 500px; /* Prevent it from stretching too much */
+    text-align: justify;
+}
+
 .section .number {
     font-family: "devil breeze";
     font-size: 15em;
@@ -122,7 +196,7 @@ header .content-fit nav ul{
     padding-right: 30%;
 }
 #description .number {
-    font-size: 5em;
+    font-size: 15em;
 }
 #description .title {
     font-size: 7em;
@@ -155,7 +229,8 @@ header .content-fit nav ul{
 }
 #contact .sign {
     font-family: 'Bimbo', sans-serif;
-    font-size: 10em;
+    font-size: 8em;
+    margin-top: 1em;
 }
 #container3D {
     position: fixed;
@@ -164,6 +239,7 @@ header .content-fit nav ul{
     z-index: 100;
     pointer-events: none;
 }
+
 @media screen and (max-width: 1023px){
     #banner .title {
         font-size: 5em;
@@ -197,4 +273,20 @@ header .content-fit nav ul{
     #container3D {
         position: absolute;
     }
+}
+.book-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #d1ff48;
+    color: #1B1B1B;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.book-button:hover {
+    background-color: #b4e23c;
 }

@@ -1,0 +1,58 @@
+/* Prevent Home.js from showing under Cottages page */
+.cottages-container {
+    min-height: 100vh; /* Ensures the page fills the full screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 120px; /* Adjust based on header height */
+}
+
+/* Make sure the form has space before the image */
+.booking-form {
+    margin-bottom: 30px; /* Creates space between form and house image */
+}
+
+/* Styling for price */
+.price h2 {
+    color: #445022;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Style for cottage description */
+.cottage-description {
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cottage-description h3 {
+    margin-bottom: 10px;
+}
+
+.cottage-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cottage-description ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Forest and Cottage Images */
+.cottage-image {
+    width: 50%;
+    display: block;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* ✅ This stops extra Home.js content from being visible */
+body {
+    overflow-x: hidden;
+}
