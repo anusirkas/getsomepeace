@@ -52,16 +52,23 @@ header .content-fit nav ul li {
     list-style: none;
 }
 
-header .content-fit nav ul li .nav-link {
+/* ✅ Ensure navigation links & buttons look the same */
+header .content-fit nav ul li .nav-link,
+header .content-fit nav ul li button {
     text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: bold;
+    background: none;  /* ✅ Removes white background */
+    border: none;      /* ✅ Removes button border */
+    padding: 0;        /* ✅ Removes extra button padding */
+    cursor: pointer;   /* ✅ Makes it clickable */
     transition: 0.3s ease-in-out;
 }
 
-header .content-fit nav ul li .nav-link:hover {
-    color: #d1ff48;
+header .content-fit nav ul li .nav-link:hover,
+header .content-fit nav ul li button:hover {
+    color: #d1ff48; /* ✅ Same hover effect as other links */
 }
 
 

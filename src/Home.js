@@ -119,10 +119,17 @@ const Home = () => {
           style={{ width: "60vw", top: "300px", bottom: "0", right: "0" }} 
         />
         <img 
-          src="leaf.png" 
+          src="purpleflowers.png" 
           className="decorate" 
           alt="" 
-          style={{ width: "40vw", top: "800px", bottom: "0", left: "0", zIndex: "101" }} 
+          style={{ 
+            width: "20vw", 
+            top: "1200px", 
+            bottom: "0", 
+            left: "10vw", 
+            zIndex: "101",
+            transform: "scaleX(-1)"
+        }} 
         />
       </div>
 
@@ -143,11 +150,19 @@ const Home = () => {
           </div>
         </div>
         <img 
-          src="purpleflowers.png" 
-          className="decorate" 
-          alt="" 
-          style={{ width: "30vw", top: "500px", bottom: "0", left: "10vw", zIndex: "101" }} 
+            src="leaf.png" 
+            className="decorate" 
+            alt="" 
+            style={{ 
+                width: "60vw", 
+                top: "700px", 
+                bottom: "0", 
+                right: "-30px",  /* ✅ Moved to right side */
+                zIndex: "101",
+                transform: "scaleX(-1)" /* ✅ Mirrors the image horizontally */
+            }} 
         />
+
       </div>
 
       <div className="section" id="description">
