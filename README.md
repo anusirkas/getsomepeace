@@ -1,4 +1,4 @@
-# This project 
+# Get Some Peace - House Rent Website
 This project explores how to add a moving 3D animation to your website as you scroll. I used Sketchfab, three.js and React.
 This is a learning project based on Lun Dev:
 https://www.youtube.com/watch?v=zNXQS2DfckU
